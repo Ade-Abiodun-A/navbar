@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav-row">
+        <div class="logo-div">
+            <img src="images/logo.png" alt="" class="logo">
+        </div>
+        <nav class="nav">  
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul> 
+            
+        </nav>    
+        <div class="btns">
+        <a href="#"><button class="white-btn">Log In</button></a>
+        <a href="#"><button class="blue-btn">Register</button></a>
+        </div>
+        <label for="checkbtn" class="nav-icon">
+            <div class="checkbox-line"></div>
+            <div class="checkbox-line"></div>
+            <div class="checkbox-line"></div>
+        
+        </label>
+    </div>
+</body>
+<script>
+    const toggleButton = document.getElementsByClassName('nav-icon');
+    const navList = document.getElementsByClassName('nav-list');
+
+    toggleButton.addEventListener('click', () => {
+        navList.classList.toggle('active');
+    })
+</script>
+
+</html>

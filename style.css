@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Outfit&family=Poppins:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-row{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 30px 10px;
+    background-color: #F3FAFD;
+}
+nav{
+    list-style: none;
+}
+.nav li{
+    display: inline-block;
+    padding: 15px; 
+}
+.logo-div{
+    width: 250px;
+    height:70px;
+}
+.logo{
+    max-width:100%;
+    max-height:100%;
+}
+.white-btn{
+    width: 120px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid#81B6C4;
+    color: #163037;
+    background-color: white;
+   
+    
+}
+.blue-btn{
+    width: 120px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid#81B6C4;
+    color: #163037;
+    background-color: #81B6C4;
+    font-family: 'outfit', sans-serif;
+    font-weight: bold;
+    
+}
+a, li, button{
+    text-decoration: none;
+}
+nav li a{
+    color:#81B6C4 ;
+}
+nav li a:hover, nav li a:active{
+color: #163037;
+}
+.checkbox-line {
+    width: 35px;
+    height: 6px;
+    margin: 5px;
+    background-color: #81B6C4;
+    cursor: pointer;
+}
+.nav-icon{
+    display: none;
+    cursor: pointer;
+} 
+
+/* Responsiveness */
+@media screen and (max-width: 849px) {
+    .nav-icon{
+     display: block;
+     position: absolute;
+     right: 15px;
+     top: 15px;
+    }
+    .nav-row{
+        flex-direction: column;
+       }
+       .btns{
+        display: flex;
+        flex-direction: column;
+        display: none;   
+       }
+       .nav li{
+        display: none;     
+       }
+       .blue-btn{
+        margin-top: 20px;
+       }
+       .logo-div{
+        position: absolute;
+        left: 10px;
+        top: 15px;  
+       }
+       .active{
+        display: block;
+       }
+       
+} 
